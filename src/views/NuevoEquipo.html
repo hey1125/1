@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/NuevoEquipo.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Equipo Pokémon</title>
+</head>
+
+<body>
+    <div class="header"> <!--HEADER-->
+        <a href="/CambiarPerfil">
+            <img class="fotoPerfil" id="foto_perfil">
+        </a>
+        <div class="menu">
+            <a href="/">
+                <h6 class="paginaPrincipal">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas">Estadísticas</h6>
+            </a>
+            <a href="/JugarUnaPartida">
+                <h6 class="duelos">Duelos</h6>
+            </a>
+            <a href="/EquipoPokemon">
+                <h6 class="equipo">Equipos</h6>
+            </a>
+        </div>
+    </div>
+    </div>
+    <h1>Seleccione su equipo Pokémon</h1>
+    <div id="contenedor-pokemon-seleccionado"></div>
+    <div class="centrarNombre">
+        <label for="nombre-equipo">Nombre del Equipo:</label>
+        <input type="text" id="nombreEquipo" required>
+        <label for="nombre-usuario">Nombre del Usuario:</label>
+        <input type="text" id="nombreUsuario" required>
+    </div>
+    <button class="salvarEquipo" id="salvar-equipo" action = "/guardarEquipo">Guardar Equipo</button>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo"></tbody>
+    </table>
+    <div id="pagination"></div>
+
+    <div class="footer"> <!--FOOTER-->
+        <div class="pokemonFight">Pokémon Fight</div>
+        <div class="redesSociales">
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="menu_Footer">
+            <a href="/">
+                <h6 class="paginaPrincipal">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas">Estadísticas</h6>
+            </a>
+        </div>
+    </div>
+    <script src="js/NuevoEquipo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/lista_pokemon.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Lista de Pokémon</title>
+</head>
+<body>
+    <div class="header"> <!--HEADER-->
+        <a href="/CambiarPerfil">
+        <img class="fotoPerfil" id="foto_perfil">
+    </a>
+        <div class="menu">
+            <a href="/"><h6 class="paginaPrincipal">Página Principal</h6></a>
+            <a href="/LandingPageEquipo"><h6 class="sobreNosotros">Sobre Nosotros</h6></a>
+        </div>
+    </div>    
+    <main>
+        <h1>Lista de Pokémon</h1>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Nombre</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo">
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <a href="#" id="prev">&laquo; Anterior</a>
+            <a href="#" id="next">Siguiente &raquo;</a>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="pokemonFight">Pokémon Fight</div>
+        <div class="redesSociales">
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="menu_Footer">
+            <a href="/"><h6 class="paginaPrincipal_footer">Página Principal</h6></a>
+            <a href="/LandingPageEquipo"><h6 class="sobreNosotros_footer">Sobre Nosotros</h6></a>
+        </div>
+    </div>
+
+    <script src="/js/lista_pokemons.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/elegir_Equipo.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+   
+    <title>Jugar una partida</title>
+</head>
+
+<body>
+    <div class="header"> <!--HEADER-->
+        <a href="/CambiarPerfil">
+            <img class="fotoPerfil" id="foto_perfil">
+        </a>
+        <div class="menu">
+            <a href="/PaginaPrincipal">
+                <h6 class="paginaPrincipal">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas">Estadísticas</h6>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="body"> <!--BODY-->
+        <h3 class="titulo">Selecciona tu equipo para la batalla</h3>
+            <button class="boton_carrousel_arriba" onclick=carrousel()><i class='bx bxs-up-arrow'></i></button>
+                <div class="caja_1">
+                    <h2><%= nombreEquipo1 %></h2>
+                    <table>
+                        <tr>
+                            <td><img class="imagen_Personajes"><img class="imagen_Personajes"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="imagen_Personajes"><img class="imagen_Personajes"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="imagen_Personajes"><img class="imagen_Personajes"></td>
+                        </tr>
+                    </table>
+                    <button class="boton_general">Elegir este equipo</button>
+                    </a>
+                    <a href="/BatallaPokemon">
+                    <button class="boton_general">Iniciar batalla</button>
+                    </a>
+                </div>
+
+                <div class="caja_2">
+                    <h2>Equipo Solutions</h2>
+                    <table>
+                        <tr>
+                            <td><img class="imagen_Personajes"><img class="imagen_Personajes"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="imagen_Personajes"><img class="imagen_Personajes"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="imagen_Personajes"><img class="imagen_Personajes"></td>
+                        </tr>
+                    </table>
+                    <button class="boton_general">Elegir este equipo</button>
+                    </a>
+                    <a href="/BatallaPokemon">
+                    <button class="boton_general">Iniciar batalla</button>
+                    </a>
+                </div>
+                <button class="boton_carrousel_abajo"onclick=carrousel()><i class='bx bxs-down-arrow'></i></button>     
+    </div>   
+    <div class="footer"> <!--FOOTER-->
+        <div class="pokemonFight">Pokémon Fight</div>
+        <div class="redesSociales">
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="menu_Footer">
+            <a href="/PaginaPrincipal.html">
+                <h6 class="paginaPrincipal_footer">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros_footer">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas">Estadísticas</h6>
+            </a>
+        </div>
+        <script src="/js/elegir__Equipo.js"></script>
+</body>
+
+</html>

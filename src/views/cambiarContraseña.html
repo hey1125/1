@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cambiarContraseña.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
+    <title>Cambiar Contraseña</title>
+</head>
+
+<body>
+    <div class="header"> <!--HEADER-->
+        <img src="/img/logoPokemon.png" class="logoimagen">
+
+        <div class="menu">
+            <a href="/">
+                <h6 class="paginaPrincipal">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros">Sobre Nosotros</h6>
+            </a>
+        </div>
+    </div>
+    <div class="body"> <!--BODY-->
+        <div class="formulario">
+            <h1>CAMBIAR CONTRASEÑA</h1>
+            <form action="" id="formulario">
+                <!-- Nueva contraseña -->
+                <div class="formulario__general" id="grupo__contraseña">
+                    <label for="label" class="contraseña1">Ingrese la nueva contraseña</label>
+                    <div class="formulario__input">
+                        <input type="password" class="input" id="contraseña">
+                        <i class="formulario__validacion fa-solid fa-check"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña debe tener mínimo 8 caracteres.</p>
+                </div>
+                <br>
+                <br>
+                <!-- Contraseña2 -->
+                <div class="formulario__general" id="grupo__contraseña2">
+                    <label for="label" class="contraseña2">Ingrese la contraseña nuevamente</label>
+                    <div class="formulario__input">
+                        <input type="password" class="input" id="contraseña2">
+                        <i class="formulario__validacion fa-solid fa-check"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña debe tener mínimo 8 caracteres.</p>
+                </div>
+                <!-- BOTON ENVIAR -->
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <h6 class="formulario__mensaje-exito" id="formulario__mensaje-exito">La contraseña se cambio de
+                        manera exitosa
+                    </h6>
+                    <br>
+                    <input class="formulario__btn" type="submit" value="Enviar" id="formulario__btn">
+                </div>
+                <a href=#>
+            </form>
+        </div>
+
+    </div>
+    <div class="footer"> <!--FOOTER-->
+        <div class="pokemonFight">Pokémon Fight</div>
+        <div class="redesSociales">
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="menu_Footer">
+            <a href="/">
+                <h6 class="paginaPrincipal_footer">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros_footer">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas_footer">Estadísticas</h6>
+            </a>
+        </div>
+    </div>
+
+</body>
+<script src="/js/cambiarContraseña.js"></script>
+
+</html>

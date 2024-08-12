@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/tabla_Liderazgo.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Tabla de liderazgo</title>
+</head>
+
+<body>
+    <div class="header"> <!--HEADER-->
+        <a href="/CambiarPerfil">
+            <img class="fotoPerfil" id="foto_perfil">
+        </a>
+        <div class="menu">
+            <a href="/">
+                <h6 class="paginaPrincipal">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas">Estadísticas</h6>
+            </a>
+        </div>
+    </div>
+    <div class="body"> <!--BODY-->
+        <h3 class="titulo">Tabla de liderazgo</h3>
+        <p class="resumen">Tabla de liderazgo entre jugadores, definido por los mejores </p>
+        <p class="resumen">resultados de duelos acumulados!</p>
+        
+        <% if (!datos) { %>
+            <div class="alert"> Juega una partida para desbloquear tus estadísticas</div>
+            <% } else { %>
+       <table id="tabla_liderazgo" class="tabla_body">
+            <thead>
+                <tr>
+                    <th>Jugador</th>
+                    <th class="th_resultados">Victorias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% datos.forEach(dato =>{ %>
+                <tr>
+                    <td>
+                        <div class="caja_Usuario">
+                            <img class="imagen_Personajes" src="<%= dato.foto %>">
+                            <%= dato.nombreUsuario %>
+                        </div>
+                    </td>
+                    <td>
+                        <p><%= dato.victorias %></p>
+                    </td>
+                </tr>
+            <% }) %>
+            </tbody>
+        </table>
+        <% } %>
+    </div>
+    <div class="footer"> <!--FOOTER-->
+        <div class="pokemonFight">Pokémon Fight</div>
+        <div class="redesSociales">
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="menu_Footer">
+            <a href="/">
+                <h6 class="paginaPrincipal">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas">Estadísticas</h6>
+            </a>
+        </div>
+</body>
+
+</html>

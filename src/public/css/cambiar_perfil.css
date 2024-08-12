@@ -1,0 +1,250 @@
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url(/img/fondo.jpg); 
+    background-size: cover;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B4CCA;
+    width: 100%;
+    padding: 10px 70px;
+}
+
+.fotoPerfil {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.paginaPrincipal,
+.sobreNosotros {
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: black;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.footer a:active {
+    color: white;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.pokemonFight {
+    align-content: center;
+}
+
+.redesSociales {
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+}
+
+.bxl-facebook-circle,
+.bxl-linkedin-square,
+.bxl-youtube,
+.bxl-instagram {
+    margin: 5px;
+}
+
+.menu_Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.paginaPrincipal_footer,
+.sobreNosotros_footer,
+.estadisticas_footer {
+    margin: 15px;
+    font-size: 16px;
+}
+
+
+div#caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+
+div#form {
+    width: 100%;
+    max-width: 676px;
+    background-color: #d4d2d2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoPerfilGrande {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+    cursor: pointer;
+}
+
+.perfil p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+div#form {
+    background-color: #d4d2d2; 
+}
+
+div#caja {
+    background-color: #d4d2d2; 
+}
+.form-group input {
+    background-color: white; 
+}
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 120px; /* Ajusta esta posición según necesites */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 600px; /* Ajusta esta altura según necesites */
+    overflow-y: auto; /* Añade la barra de desplazamiento vertical */
+    
+}
+
+
+.menu-image {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.menu-image:hover {
+    border: 2px solid #3B4CCA;
+} 
+ #saveButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#saveButton:hover {
+    background-color: #45a049;
+}
+#group5 {
+    margin-bottom: 20px;
+}
+
+#textbox5 {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

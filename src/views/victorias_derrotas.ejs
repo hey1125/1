@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/victorias_derrotas.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Victorias y derrotas contra tus amigos</title>
+</head>
+
+<body>
+    <div class="header"> <!--HEADER-->
+        <a href="../Perfil/Cambiar_perfil.html">
+        <img class="fotoPerfil" id="foto_perfil">
+    </a>
+        <div class="menu">
+            <a href="/">
+                <h6 class="paginaPrincipal">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas">Estadísticas</h6>
+            </a>
+        </div>
+    </div>
+    <div class="body"> <!--BODY-->
+        <h3 class="titulo">Victorias y derrotas contra tus amigos</h3>
+        <% if (!datos) { %>
+            <div class="alert"> Juega una partida con tus amigos para desbloquear tus estadísticas!</div>
+            <% } else { %>
+        <table class="tabla_body_victorias">
+                <h3 class="titulo">Victorias</h3>
+            <% datos.victorias.forEach(victoria =>{ %>
+            <tr>
+                <td>
+                    <div class="caja_Usuario">
+                        <img class="imagen_Personajes" src="<%= victoria.usuario1.foto %>">
+                            <%= victoria.usuario1.nombreUsuario %>
+                    </div>
+                </td>
+                <td>
+                    <p>Equipo: <%= victoria.usuario1.equipo %></p>
+                </td>
+                <td>V.S</td>
+                <td>
+                    <div class="caja_Usuario">
+                        <img class="imagen_Personajes" src="<%= victoria.usuario2.foto %>">
+                            <%= victoria.usuario2.nombreUsuario %>
+                    </div>
+                </td>
+                <td>
+                    <p>Equipo: <%= victoria.usuario2.equipo %></p>
+                </td>
+            </tr>
+           <% }) %>
+        </table>
+        <% } %>
+    </div>
+    <table class="tabla_body_derrotas">
+            <h3 class="titulo">Derrotas</h3>
+            <% datos.derrotas.forEach(derrota =>{ %>
+                <tr>
+                    <td>
+                        <div class="caja_Usuario">
+                            <img class="imagen_Personajes" src="<%= derrota.usuario1.foto %>">
+                                <%= derrota.usuario1.nombreUsuario %>
+                        </div>
+                    </td>
+                    <td>
+                        <p>Equipo: <%= derrota.usuario1.equipo %></p>
+                    </td>
+                    <td>V.S</td>
+                    <td>
+                        <div class="caja_Usuario">
+                            <img class="imagen_Personajes" src="<%= derrota.usuario2.foto %>">
+                                <%= derrota.usuario2.nombreUsuario %>
+                        </div>
+                    </td>
+                    <td>
+                        <p>Equipo: <%= derrota.usuario2.equipo %></p>
+                    </td>
+                </tr>
+               <% }) %>
+    </table>
+</div>
+    <div class="footer"> <!--FOOTER-->
+        <div class="pokemonFight">Pokémon Fight</div>
+        <div class="redesSociales">
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="menu_Footer">
+            <a href="/">
+                <h6 class="paginaPrincipal">Página Principal</h6>
+            </a>
+            <a href="/LandingPageEquipo">
+                <h6 class="sobreNosotros">Sobre Nosotros</h6>
+            </a>
+            <a href="/GenerarReportes">
+                <h6 class="estadisticas">Estadísticas</h6>
+            </a>
+        </div>
+</body>
+
+</html>
+    
+</body>
+</html>

@@ -1,0 +1,203 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B4CCA;
+}
+
+.logoEquipo{
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.paginaPrincipal {
+    margin: 20px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: black;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.footer a:active {
+    color: white;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.resumen {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 180px;
+    margin-right: 180px;
+    font-weight: normal;
+    font-size: xx-large;
+}
+
+.body_informacion{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.logoEquipo2{
+    width: 696px;
+    height: 536px;
+    top: 623px;
+    left: 98px;
+}
+
+.titulo {
+    margin: 0;
+    padding: 0;
+}
+
+.informacion{
+    margin-top: 50px;
+    padding-left: 20px;
+    width: 611px;
+    height: 734px;
+    left: 813px;
+}
+
+.personalEquipo {
+    font-size: xx-large;
+    margin-left: 100px;
+    margin-bottom: 0;
+}
+
+.resumen_p {
+    margin-left: 100px;
+    margin-bottom: 90px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    justify-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.caja_Usuario {
+    width: 404px;
+    height: 114px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.imagen {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    background-color: wheat;
+}
+
+.rol {
+    margin: 0;
+    color: gray;
+}
+
+.grid-container > :nth-child(4) {
+    display: flex-box;
+    justify-self: center;
+    margin-left: 280px;
+}
+
+.grid-container > :nth-child(5) {
+    grid-column: 3 / 4;
+    margin-right: 299px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    height: 164px;
+}
+
+.pokemonFight {
+    align-content: center;
+}
+
+.redesSociales {
+    align-content: center;
+    cursor: pointer;
+}
+
+.bxl-facebook-circle,
+.bxl-linkedin-square,
+.bxl-youtube,
+.bxl-instagram {
+    margin: 5px;
+}
+
+.menu_Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.paginaPrincipal_footer,
+.sobreNosotros_footer,
+.estadisticas_footer {
+    margin: 15px;
+    font-size: 16px;
+}
